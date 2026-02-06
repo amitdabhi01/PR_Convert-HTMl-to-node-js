@@ -1,0 +1,76 @@
+body {
+  background: #d0e9f2;
+  background: linear-gradient(
+    90deg,
+    rgba(208, 233, 242, 0.77) 0%,
+    rgba(228, 245, 235, 1) 50%,
+    rgba(250, 247, 237, 1) 100%
+  );
+  color: black;
+}
+
+.container {
+  width: 1320px;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.heading-1 {
+  text-decoration: underline;
+  margin-bottom: 40px;
+
+}
+.student-name{
+    font-size: 20px;
+}
+
+.add-btn {
+  text-decoration: none;
+  /* border: 1px solid black; */
+  background-color: rgb(46, 119, 46);
+  padding: 15px 30px 15px 30px;
+  margin-bottom: 30px !important;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+li {
+  margin-bottom: 40px;
+}
+
+.edit-btn {
+  text-decoration: none;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  background-color: rgb(204, 204, 40);
+  color: white;
+  border: none;
+}
+
+.delete-btn {
+  text-decoration: none;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(197, 35, 35);
+  color: white;
+}
+
+
+.student-input{
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+}

@@ -5,24 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All StudentList</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <h1>Student List</h1>
+    <div class="container">
+        <h1 class="heading-1">Student List</h1>
 
-    <a href="/add">Add Student Data</a>
+        <a href="/add" class="add-btn">Add Student Data</a>
 
-    <ul>
-        <% studentList.forEach((s)=> {%>
-            <li>
-                <%=s.name%>
+        <ul>
+            <% studentList.forEach((s)=> {%>
+                <li>
+                    <p>
+                        <span class="student-name">
+                            <%=s.name%>
+                        </span>
+                        <a href="/edit/<%=s.id%>" class="edit-btn">Edit</a>
 
-                    <a href="/edit/<%=s.id%>">Edit</a>
+                        <a href="/delete/<%=s.id%>" class="delete-btn">Delete</a>
+                    </p>
 
-                    <a href="/delete/<%=s.id%>">Delete</a>
-            </li>
-            <%})%>
-    </ul>
+                </li>
+                <%})%>
+        </ul>
+    </div>
 </body>
 
 </html>

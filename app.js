@@ -1,4 +1,6 @@
 import express from "express";
+import { fileURLToPath } from "url";
+import path from "path";
 
 const app = express();
 
@@ -7,6 +9,17 @@ app.set("view engine", "ejs");
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
+
+// serving static file
+
+const __fileName = fileURLToPath(import.meta.url);
+
+const __dirName = path.dirname(__fileName)
+
+console.log("filename", __fileName);
+console.log("folder", __dirName);
+
+app.use(express.static(path.join(__dirName, "public")));
 
 let studentList = [
   {
