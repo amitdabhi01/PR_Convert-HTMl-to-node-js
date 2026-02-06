@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All StudentList</title>
+</head>
+
+<body>
+    <h1>Student List</h1>
+
+    <a href="/add">Add Student Data</a>
+
+    <ul>
+        <% studentList.forEach((s)=> {%>
+            <li>
+                <%=s.name%>
+
+                    <a href="/edit/<%=s.id%>">Edit</a>
+
+                    <a href="/delete/<%=s.id%>">Delete</a>
+            </li>
+            <%})%>
+    </ul>
+</body>
+
+</html>
